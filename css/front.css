@@ -1,0 +1,390 @@
+html{
+    /*height: 100%;*/
+    background-color: #171618
+    
+}
+
+html, body {
+    /*max-width: 100%;*/
+
+    color: #f7f7f7;
+    font-family: "Noto Sans";
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+
+.landingImg{
+  /*display:inline-block;*/
+  position: absolute;
+  left: 0px;
+  top: 85px;
+  /*top: 15px;*/
+  z-index: -1;
+
+}
+
+
+/*TEMP*/
+h1,p{ color: white;}
+
+h2{
+  margin: 0px;
+  font-weight: lighter;
+  font-size: 44px;
+  letter-spacing: 2.1px;
+}
+
+h3{
+  margin: 0px;
+  color: #bcbcbc;
+  font-weight: lighter;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+}
+
+.testBar{
+  width: 100%;
+  height: 50px;
+  background: red;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+    padding: 28px;
+    background: #fec414;
+}
+
+
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Noto Sans";
+    color: white;
+}
+
+.logo{
+    padding-left: 42px;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    height: 25%;
+    /*width: auto;*/
+}
+
+.blank{
+  padding: 132px;
+}
+
+.navLink{
+    /*margin: 5px 42px;*/
+    padding: 5px 42px;
+    font-family: "Ubuntu";
+    text-align: center;
+    color: black;
+    letter-spacing: 0.2px;
+    font-weight: 900;
+    font-size: 30px;
+    height: 100%;
+    -webkit-transform:scale(.93,.96); 
+}
+
+.navLink:hover{
+  background-color: orange;
+}
+
+/*
+ *.arrow-down {
+ *    display:inline-block;
+ *    white-space: nowrap;
+ *    width: 0; 
+ *    height: 0; 
+ *    border-left: 150px solid transparent;
+ *    border-right: 150px solid transparent;
+ *    z-index: 1;
+ *    border-top: 150px solid #fec414;
+ * }
+ */
+
+.arrow-down {
+    display:inline-block;
+    white-space: nowrap;
+    width: 0; 
+    height: 0; 
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    z-index: 1;
+    border-top: 190px solid #fec414;
+ }
+
+ .branding{
+    margin-top: 59px;
+ }
+
+ .tagLine{
+  margin-top: 45px;
+  color: white; 
+  font-family: "Noto Sans";
+  font-size: 27px;
+  max-width: 50%;
+  text-align: center;
+ }
+
+ .ghost-btn{
+  margin: 65px;
+  /*font-family: "Noto Sans";*/
+  font-family: "Ubuntu";
+  display: inline-block;
+  width: 120px;
+  padding: 8px;
+  color: #f7f7f7;
+  border: 7px solid #fec414;
+  border-radius: 55px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+ }
+
+.ghost-btn:hover{
+  border: 7px solid #fec414;
+  color: #ffffff;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.social-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #201f23;
+  width: 150px;
+  height: 180px;
+  padding: 80px;
+  margin: 25px;
+}
+
+.social-logo{
+  /*margin: 25px 25px 5px 25px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 55px;
+  /*background-color: crimson;*/
+}
+
+.social-link
+{
+ margin-top: 15px;
+ font-size: 22px;
+ font-weight: 300;
+ color: #bcbcbc;
+ letter-spacing: 1.8px;
+}
+
+.social-caption
+{
+ margin-top: 22px;
+ font-size: 18px;
+ font-weight: 100;
+ text-align: center;
+ line-spacing: 1px;
+ color: #bcbcbc;
+ /*letter-spacing: 1.8px;*/
+ /*background-color: red;*/
+ width: 120%; /*BAD*/
+ /*padding-left: 75px;*/
+ /*padding-right: 75px;*/
+}
+
+.yellowBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18px;
+    /*padding: 8px;*/
+    background: #daa91f;
+}
+
+.player-box
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #201f23;*/
+  width: 150px;
+  height: 180px;
+  padding: 80px;
+  margin: 25px;
+}
+
+.player-name
+{
+  margin-top: 15px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.player-position
+{
+ font-size: 27px;
+ font-weight: 300;
+ color: #bcbcbc;
+ letter-spacing: 1.8px;
+}
+
+.building-title
+{
+  font-family: "Quicksand";
+  margin: 90px 0px 90px 0px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 3.0px;
+}
+
+/*address, about, contact*/
+.info{
+  margin: 0px 45px;
+  /*background-color: white;*/
+}
+
+.title{
+  font-family: "Quicksand";
+  margin: 90px 0px 0px 0px;
+  text-align: center;
+  font-size: 46px;;
+  font-weight: 100;
+  /*color: #fcfcfc;*/
+  letter-spacing: 2.6px;
+  /*text-decoration: underline #daa91f;*/
+}
+
+.yellow-underline
+{
+  width: 175px;
+  border-bottom: 3.5px solid #daa91f;
+  margin-bottom: 25px;
+}
+
+.subText{
+  /*font-family: "Quicksand";*/
+  /*margin: 90px 0px 90px 0px;*/
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 0.9px;
+  /*color: #fcfcfc;*/
+}
+
+.grey-line{
+  background-color: #444445;
+  width: 100%;
+  height: 3px;
+}
+
+.games-section{
+  background-color: #262627;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.games-row{
+
+}
+
+.game-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #201f23;
+  width: 150px;
+  height: 180px;
+  padding: 80px;
+  margin: 25px;
+}
+
+.game{
+    -webkit-transform:scale(.60,.60); 
+    transition: transform .2s; /* Animation */
+}
+
+.game:hover
+{
+   transform: scale(0.78); 
+}
+
+
+.sponsor-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 95px;
+    padding: 28px;
+    background: #fcfcfc;
+
+}
+
+.sponsor{
+  margin: 0px 40px;
+}
+
+.footer{
+  /*display: none;*/
+  margin-top: 25px;
+}
+
+.footer-logo{
+  padding: 15px 90px;
+  /*background-color: red;*/
+}
+
+.footer-emphisis
+{
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Ubuntu";
+  margin-bottom: 20px;
+}
+
+.footer-text
+{
+  font-family: "Ubuntu";
+  margin: 10px 0px;
+  color: #bcbcbc;
+  font-weight: lighter;
+  font-size: 16px;
+  /*letter-spacing: 1.3px;*/
+}
+
+.footer-box{
+  /*display: none;*/
+  width: 25px;
+}
+
+/*TEST!*/
+p{
+  margin: 0;
+
+}

@@ -1,0 +1,274 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/front.css" media="all">
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Quicksand|Ubuntu|Agency+FB|" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Wichita State Esports</title>
+    </head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+
+  //SMOOTH SCROLLING
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+
+  </script>
+    
+    <body>
+       
+
+        <!--NAVBAR-->
+        <div class="flex-col-center">
+            <nav class="navBar flex-row">
+                <a class="flex0 navLink" href="#Home">Home</a>
+                <a class="flex0 navLink" href="#Games">Games</a>
+                <a class="flex0 navLink" href="#Events">Events</a>
+                <div class="blank"></div>
+                <img class="flex0 logo" src="logo-glow.png" alt="logo">
+                <a class="flex0 navLink" href="#Gallery">Gallery</a>
+                <a class="flex0 navLink" href="#Team">Team</a>
+                <a class="flex0 navLink" href="#Sponsors">Sponsors</a>
+            </nav>
+            <div class="arrow-down"></div>
+        </div> 
+
+       <img class="landingImg" src="landing.png" alt="Crowd" width="1920" height="986"> 
+
+
+       <!--Branding, TagLine, Join Btn-->
+       <div class="flex-col-center">
+         <img class="branding" src="text-logo.png" alt="Wichita State Esports Branding">
+         <div class="tagLine">Nunc blandit lacinia nunc ac tempor. Nunc mollis, quam nec aliquet laoreet, est nibh pellentesque libero, vitae dictum quam arcu ut libero. Pellentesque odio justo, fermentum sit amet lobortis et, ullamcorper in diam. Convallis venenatis risus, id viverra dolor.</div>
+          
+        <div class="ghost-btn" style="cursor: pointer;">Join</div>
+         <!--<div class="button" onclick="location.href='/projects.html';" style="cursor: pointer;">See More</div>-->
+
+       
+       </div>
+
+        <div class="content-spacing"></div>
+        <div class="content-spacing"></div>
+        <div class="content-spacing"></div>
+        <div class="content-spacing"></div>
+        <div class="content-spacing"></div>
+        <div class="content-spacing"></div>
+
+        <!--SOCIAL MEDIA-->
+        <div class="flex-col-center">
+          <h2>Stay Connected with Wichita State Esports</h2>
+          <h3>Quality content fresh from Wichita State University</h3>
+        </div>
+
+        <div class="content-spacing"></div>
+
+        <!--SOCIAL MEDIA BOX-->
+        <div class="flex-row flex-center">
+
+          <div class="social-box">
+            <div class="social-logo">
+              <img src="img/icons/youtube.png" alt="youtube logo">
+            </div>
+            <div class="social-link">/WichitaStateEsports</div>
+            <div class="social-caption">Watch recent events and matches</div>
+          </div>
+
+          <div class="social-box">
+            <div class="social-logo">
+              <img src="img/icons/twitch.png" alt="youtube logo">
+            </div>
+            <div class="social-link">/WichitaStateEsports</div>
+            <div class="social-caption">Watch recent events and matches</div>
+          </div>
+
+          <div class="social-box">
+            <div class="social-logo">
+              <img src="img/icons/twitter.png" alt="youtube logo">
+            </div>
+            <div class="social-link">@WichitaStateEsports</div>
+            <div class="social-caption">Stay up to date with the latest news</div>
+          </div>
+
+          <div class="social-box">
+            <div class="social-logo">
+              <img src="img/icons/facebook.png" alt="youtube logo">
+            </div>
+            <div class="social-link">@WichitaStateEsports</div>
+            <div class="social-caption">Join and partake in the fun that is Esports</div>
+          </div>
+
+        </div>  
+
+
+        <div class="content-spacing"></div>
+        <div class="content-spacing"></div>
+        <div class="content-spacing"></div>
+        <div class="content-spacing"></div>
+
+        <!--<div class="yellowBar"></div>-->
+
+        <!--<div class="content-spacing"></div>-->
+        <!--<div class="content-spacing"></div>-->
+
+
+        <!--GAMES SECTION-->
+        <div class="grey-line"></div>
+
+        <div class="games-section">
+
+
+          <!--Game HEADER-->
+          <div class="flex-col-center">
+            <h2>Competative Games we Play</h2>
+            <h3>Playing the most popular games with the best players from Kansas</h3>
+          </div>
+        <div class="content-spacing"></div>
+
+
+          <div class="games-row">
+            <div class="flex-row-center">
+              <div class="game-box">
+                <img class="game" src="img/games/lol.png" alt="League of Legends Logo">
+              </div>
+              <div class="game-box">
+                <img class="game" src="img/games/overwatch.png" alt="Overwatch Logo">
+              </div>
+              <div class="game-box">
+                <img class="game" src="img/games/csgo.png" alt="CounterStrike GO Logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="games-row">
+            <div class="flex-row-center">
+              <div class="game-box">
+                <img class="game" src="img/games/hearthstone.png" alt="Hearthstone Logo">
+              </div>
+              <div class="game-box">
+                <img class="game" src="img/games/smashbros.png" alt="SmashBros 4 Logo">
+              </div>
+              <div class="game-box">
+                <img class="game" src="img/games/rocketleague.png" alt="Rocket League Logo">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grey-line"></div>
+
+        <div class="content-spacing"></div>
+
+
+        <!--CALENDAR-->
+
+        <div class="flex-row-center">
+          <iframe src="https://calendar.google.com/calendar/embed?src=muejix%40gmail.com&ctz=America%2FDenver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+
+        <div class="content-spacing"></div>
+
+
+        <div class="yellowBar"></div>
+        <div class="sponsor-banner">
+          <div class="flex-row-center">
+            <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
+            <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
+            <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
+            <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
+            <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
+            <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
+          </div>
+        </div>
+        <div class="yellowBar"></div>
+
+
+        <!--FOOTER-->
+        <div class="footer flex-vert-start">
+          <div class="flex-row-center flex-vert-start">
+            <div class="flex-col-center">
+              <img class="footer-logo flex1" src="img/logo-footer.png" alt="Shocker's Logo">
+            </div>
+
+            <div class="flex-col-center flex2 footer-box">
+              <div>
+                <p class="footer-emphisis"> All Rights reserved by Wichita State Esports </p>
+                <p class="footer-text"> Nunc blandit lacinia nunc ac tempor. Nunc mollis, quam nec aliquet laoreet, est nibh pellentesque libero, vitae dictum quam arcu ut libero. Pellentesque odio justo, fermentum sit amet lobortis et, ullamcorper in diam. Convallis venenatis risus, id viverra dolor. </p>
+              </div>
+            </div>
+
+            <div class="flex-col-center flex1 footer-box">
+              <div class="box">
+                <p class="footer-emphisis"> Home </p>
+                <p class="footer-text"> Social Media </p>
+                <p class="footer-text"> Team </p>
+                <p class="footer-text"> Location  </p>
+                <p class="footer-text"> Sponsors </p>
+              </div>
+            </div>
+
+            <div class="flex-col-center flex1 footer-box">
+              <div>
+                <p class="footer-emphisis"> Community </p>
+                <p class="footer-text"> Events </p>
+                <p class="footer-text"> Management </p>
+                <p class="footer-text"> Users </p>
+                <p class="footer-text"> Forum </p>
+                <p class="footer-text"> Provisional Teams </p>
+              </div>
+            </div>
+
+            <div class="flex-col-center flex1 footer-box">
+              <div>
+                <p class="footer-emphisis"> Social Media </p>
+                <p class="footer-text"> Youtube </p>
+                <p class="footer-text"> Twitch </p>
+                <p class="footer-text"> Twitter </p>
+                <p class="footer-text"> Facebook </p>
+              </div>
+            </div>
+
+            <div class="flex-col-center flex1 footer-box flex-vert-start">
+              <div class="flex-vert-start">
+                <p class="footer-emphisis"> Press Kit </p>
+                <p class="footer-text"> Gallery </p>
+                <p class="footer-text"> Branding </p>
+                <p class="footer-text"> Articles </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="content-spacing"></div>
+        </div>
+
+    </body>
+</html>
