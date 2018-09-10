@@ -21,9 +21,30 @@ html, body {
   top: 85px;
   /*top: 15px;*/
   z-index: -1;
+  margin-bottom: 15px;
 
 }
 
+.video-container{
+  margin: 0px 22%;
+  margin-top: 55px;
+  /*margin-bottom: 55px;*/
+}
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 /*TEMP*/
 h1,p{ color: white;}
@@ -169,6 +190,7 @@ a{
 
 .social-box{
   display: flex;
+  /*flex: 0 1 auto;*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -182,10 +204,11 @@ a{
 .social-logo{
   /*margin: 25px 25px 5px 25px;*/
   display: flex;
+  flex: 0 1 auto;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  /*width: 50px;*/
+  /*height: 50px;*/
   padding: 55px;
   /*background-color: crimson;*/
 }
@@ -250,6 +273,12 @@ a{
  font-weight: 300;
  color: #bcbcbc;
  letter-spacing: 1.8px;
+}
+
+.calendar-container {
+  margin: 0px 25%;
+  /*width: 75%;*/
+  /*height: 75%;*/
 }
 
 .building-title

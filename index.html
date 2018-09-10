@@ -9,10 +9,14 @@
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Quicksand|Ubuntu|Agency+FB|" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Wichita State Esports</title>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+        <!--FULLCALENDAR-->
+        <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+        <script src='fullcalendar/lib/jquery.min.js'></script>
+        <script src='fullcalendar/lib/moment.min.js'></script>
+        <script src='fullcalendar/fullcalendar.js'></script>
+        <script type='text/javascript' src='fullcalendar/gcal.js'></script>
     </head>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
   <script>
 
   //SMOOTH SCROLLING
@@ -41,6 +45,27 @@
     });
   });
 
+
+  <!--FULL CALENDAR-->
+  $(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+      // put your options and callbacks here
+
+
+      googleCalendarApiKey: 'AIzaSyCvsQidtagKTESbU9xo7gDmEnkB6y8krp0',
+      events: {
+        googleCalendarId: 'wichitastateesport@gmail.com'
+      }
+
+
+    })
+
+  });
+
+
   </script>
     
     <body>
@@ -67,7 +92,8 @@
        <!--Branding, TagLine, Join Btn-->
        <div class="flex-col-center">
          <img class="branding" src="text-logo.png" alt="Wichita State Esports Branding">
-         <div class="tagLine">Nunc blandit lacinia nunc ac tempor. Nunc mollis, quam nec aliquet laoreet, est nibh pellentesque libero, vitae dictum quam arcu ut libero. Pellentesque odio justo, fermentum sit amet lobortis et, ullamcorper in diam. Convallis venenatis risus, id viverra dolor.</div>
+         <!--<div class="tagLine">Nunc blandit lacinia nunc ac tempor. Nunc mollis, quam nec aliquet laoreet, est nibh pellentesque libero, vitae dictum quam arcu ut libero. Pellentesque odio justo, fermentum sit amet lobortis et, ullamcorper in diam. Convallis venenatis risus, id viverra dolor.</div>-->
+         <div class="tagLine">From Wichita State University, come hang out, watch, and play with the very best players of Wichita, Kansas. Take part of the action whether you are a simple spectactor or wanting to become pro, or just wanna hang out with other gamers like yourself!</div>
           
         <div class="ghost-btn" style="cursor: pointer;" onclick="location.href='http://discord.gg/kFU93s';" >Join</div>
          <!--<div class="button" onclick="location.href='/projects.html';" style="cursor: pointer;">See More</div>-->
@@ -80,6 +106,18 @@
         <div class="content-spacing"></div>
         <div class="content-spacing"></div>
         <div class="content-spacing"></div>
+        
+        
+
+        <!--YOUTUBE VIDEO-->
+        <div class="video-container">
+          <div class="video-responsive">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/XA7qxa5hjm8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+        <div class="content-spacing"></div>
         <div class="content-spacing"></div>
 
         <!--SOCIAL MEDIA-->
@@ -89,7 +127,6 @@
         </div>
 
         <div class="content-spacing"></div>
-
         <!--SOCIAL MEDIA BOX-->
         <div class="flex-row flex-center">
 
@@ -103,7 +140,7 @@
 
           <div class="social-box">
             <div class="social-logo">
-              <img src="img/icons/twitch.png" alt="youtube logo">
+              <img src="img/icons/twitch.png" alt="twitch logo">
             </div>
             <div class="social-link">/WichitaStateEsports</div>
             <div class="social-caption">Watch recent events and matches</div>
@@ -111,7 +148,7 @@
 
           <div class="social-box">
             <div class="social-logo">
-              <img src="img/icons/twitter.png" alt="youtube logo">
+              <img src="img/icons/twitter.png" alt="twitter logo">
             </div>
             <div class="social-link">@WichitaStateEsports</div>
             <div class="social-caption">Stay up to date with the latest news</div>
@@ -119,7 +156,7 @@
 
           <div class="social-box">
             <div class="social-logo">
-              <img src="img/icons/facebook.png" alt="youtube logo">
+              <img src="img/icons/facebook.png" alt="facebook logo">
             </div>
             <div class="social-link">@WichitaStateEsports</div>
             <div class="social-caption">Join and partake in the fun that is Esports</div>
@@ -147,7 +184,7 @@
 
           <!--Game HEADER-->
           <div class="flex-col-center">
-            <h2>Competative Games we Play</h2>
+            <h2>Competitive Games we Play</h2>
             <h3>Playing the most popular games with the best players from Kansas</h3>
           </div>
         <div class="content-spacing"></div>
@@ -189,25 +226,28 @@
 
         <!--CALENDAR-->
 
-        <div class="flex-row-center">
-          <iframe src="https://calendar.google.com/calendar/embed?src=muejix%40gmail.com&ctz=America%2FDenver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <div class="calendar-container flex-row-center">
+          <!--<iframe src="https://calendar.google.com/calendar/embed?src=muejix%40gmail.com&ctz=America%2FDenver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+          <div id='calendar'></div>
         </div>
 
 
         <div class="content-spacing"></div>
 
 
-        <div class="yellowBar"></div>
-        <div class="sponsor-banner">
-          <div class="flex-row-center">
-            <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
-            <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
-            <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
-            <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
-            <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
-            <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
-          </div>
-        </div>
+        <!--
+           -<div class="yellowBar"></div>
+           -<div class="sponsor-banner">
+           -  <div class="flex-row-center">
+           -    <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
+           -    <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
+           -    <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
+           -    <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
+           -    <img class="sponsor" src="img/sponsors/wsu.png" alt="WSU Logo">
+           -    <img class="sponsor" src="img/sponsors/cybertron.png" alt="Cybertron Logo">
+           -  </div>
+           -</div>
+           -->
         <div class="yellowBar"></div>
 
 
